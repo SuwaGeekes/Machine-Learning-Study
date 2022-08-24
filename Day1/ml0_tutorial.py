@@ -55,9 +55,24 @@ elif a == 3:
 
 for i in range(4):
     print(i, end=' ') # 0 1 2 3
+print('')
 
 while a > 0:
     print(a, end=' ') # 4 3 2 1
     a -= 1
+print('')
 
 
+# 関数
+
+# 引数、戻り値あり
+def fx(x):
+    y = x**2
+    return y
+
+# 引数、戻り値なし
+def hello():
+    print('Hello')
+
+print(fx(8))    # 64
+hello()     # Hello
